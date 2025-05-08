@@ -99,10 +99,7 @@
     justify-content: center;
     gap: 10px;
   }
-  .header-right a {
-    text-decoration: none;
-    color: aliceblue;
-  }
+  
   .product-no {
     padding: 7px;
     width: 30%;
