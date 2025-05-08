@@ -8,7 +8,7 @@ This project showcases core eCommerce functionalities, allowing users to seamles
 * ✅ **Add Products**: Users can view and add products dynamically using JavaScript.
 * 🔍 **Search Function**: Real-time product search to help users find items quickly.
 * 🛒 **Shopping Cart**: Users can add and remove products from the cart.
-* 📦 **Order Summary**: The cart icon shows the number of items, and users can view full order details and prices through a "Returns & Orders" section.
+* 📦 **Order Summary**: The cart icon shows the number of items, and users can view full order details and prices.
 
 
 
