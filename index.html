@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="index.css">  
+  </head>
+
+  <body>
+    <div class="header">
+      <div>
+        <img class="logo-desktop" src="./shop-images/logo.png" alt="Shop Logo"/>     
+      </div>
+      <div class="header-middle">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="header-right">
+        <a href="checkout.html"><span class="return">Returns & Orders</span></a>
+        <span>
+          <img src="./shop-images/cartlogo.svg" alt="Cart Icon"/>
+          <div class="order-number js-cart-quantity"></div>
+        </span>
+      </div>
+    </div>
+
+    <div class="main-margin-top"></div>
+
+    <div class="main">
+      <div class="product-container"></div>
+    </div>
+
+    <script src="productlists.js"></script>
+    <script src="showproductlist.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;  
+    position: fixed;
+    width: 100%;
+    top: 0;  
+  }
+  
+  .logo-desktop {
+    width: clamp(70px, 10vw, 100px);
+    height: auto;
+  }
+  .header-right i{
+    font-size: 20px;
+    margin: 0 40px;
+    color: white;
+  }
+  h2{
+    margin-top: 100px;
+    font-size: 30px;
+  }
+.container{
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .order-summary {
+    background-color: #FBFBFB;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 30%;
+    height: fit-content;
+  }
+  .items{
+    width: 70%;    
+  }
+  .item-box {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .item-name{
+    color: green;
+  }
+  .item-price{
+    color: red;
+  }
+
+  .item img {
+    width: 130px;
+  }
+  .summary-row{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.2rem;
+    margin: 0 15px;
+    
+  }
+  .order-total{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: red;
+  }
+.btn{
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .item {
+  display: flex;
+  gap: 20px;
+  }
+.pop-up{
+  position: fixed;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 330px;
+  display: none;
+  padding: 10px;  
+  border-radius: 10px;
+}
+.overlay{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FDFAF6;
+}
+.pop-up h3{
+  
+  text-align: center;
+  
+}
+
+.btn-gp{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+
+}
+.btn-gp button{
+  padding: 7px;
+  width: 100px;
+  border: none;
+  background-color: #EB8317;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+   
+    flex-direction: column;
+    gap: 20px;
+  }
+  .items{
+    width: 100%;
+    
+}
+.order-summary {
+    width: 100%;
+}
+
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="checkout.css">
+</head>
+
+  <div class="header">
+    <div class="header-left">
+      <img
+        class="logo-desktop"
+        src="./shop-images/logo.png"
+        alt="Shop Logo"/> 
+    </div>
+
+    <div class="header-right">
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+    </div> 
+  </div>
+  
+  <h2>Checkout for items</h2>
+  <div class="container">
+
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+        <div class="summary-row"><span>Total before tax:</span><span class="total"></span></div>
+        <div class="summary-row"><span>Estimated tax (10%):</span><span class="tax"></span></div>
+        <div class="summary-row order-total"><span>Order total:</span><span class="totalPrice"></span></div>
+        <button class="btn">Place your order</button>
+    </div>
+    <div class="items"></div>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="pop-up">      
+    <h3>Are you sure to order this items?</h3>
+      <div class="btn-gp">
+        <button class="yes">Yes</button>
+        <button class="close">No</button>
+      </div>
+  </div>
+     
+    <script src="productlists.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

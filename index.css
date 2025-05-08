@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .logo-desktop {
+    width: clamp(70px, 10vw, 100px);
+    height: auto;
+  }
+  .header-middle {
+    display: flex;
+  }
+  .header-middle input {
+    padding: min(10px, 25%);
+    width: clamp(70px, 40vw, 300px);
+    border: none;
+    outline: none;
+  }
+  .header-middle i {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    justify-content: center;
+    width: 30px;
+  }
+
+  .header-right img {
+    width: clamp(30px, 8vw, 50px);
+    height: auto;
+    
+  }
+  .header-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .order-number {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    color: orange;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 1.3rem;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 10px;
+  }
+
+  .product {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: clamp(0.9rem, 1.8vw + 0.2rem, 1.3rem);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .product > img {
+    height: 350px;
+    width: 320px;
+  }
+  .add-btn,
+  .del-btn {
+    padding: 8px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .header-right a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .product-no {
+    padding: 7px;
+    width: 30%;
+    margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    .order-number {
+      top: -3px;
+      right: 4px;
+      font-size: 17px;
+    }
+    .header-right .return {
+      display: none;
+    }
+  }
